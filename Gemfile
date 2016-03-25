@@ -53,6 +53,7 @@ end
   gem 'twitter-bootstrap-rails'
   gem 'bootstrap-material-design', '0.1.4'
   
-group :production, :staging do
+group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
