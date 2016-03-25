@@ -1,0 +1,15 @@
+<div class="question_content top_content">
+  <div class="question_body">
+    <div class="question_box">
+      <span class="q">仕事</span>
+      <span class="question_text"><%= task.title %></span>
+      <br>
+      <span class="question_text"><%= task.detail %></span>
+      <% if @user.id == current_user.id %>
+        <small class='edit'>
+          <%= link_to '編集', edit_task_path(task) %>
+        </small>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="row form">
+  <div class="col-lg-12">
+    <%= form_for(@comment) do |f| %>
+      <h4>進捗内容</h4>
+      <h3><%= @going.text %></h3>
+      <div class="form-group">
+        <%= f.text_area :text, placeholder: "コメント", cols:"30", rows:"10", autofocus:"true", class:"form-control" %>
+      </div>
+      <%= f.hidden_field :going_id %>
+      <%= f.submit "コメントする", class:"btn btn-primary withripple"%>
+    <% end %>
+
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="row form">
+  <div class="col-lg-12">
+    <%= form_for(@task) do |f| %>
+      <h3><span>仕事内容</span><%= @task.title %><br>
+      <%= @task.detail %></h3>
+      <div class="form-group">
+        <%= f.text_area :title, placeholder: "編集してください", cols:"30", rows:"10", autofocus:"true", class:"form-control" %>
+        <%= f.text_area :detail, placeholder: "編集してください", cols:"30", rows:"10", autofocus:"true", class:"form-control" %>
+      </div>
+      <%= f.submit "更新する", class:"btn btn-primary withripple"%>
+    <% end %>
+  </div>
+</div>

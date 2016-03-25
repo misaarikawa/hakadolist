@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 afaeae646235c72b2681e233d9267a41136500d4 misa arikawa <misaarikawa@MacBook-Pro.local> 1456817077 +0900	branch: Created from master
+afaeae646235c72b2681e233d9267a41136500d4 ee3f939ea47c19ada08d9af27e4c7a7cfb35ccb1 misa arikawa <misaarikawa@MacBook-Pro.local> 1456823690 +0900	commit: ユーザーモデルを作成
+ee3f939ea47c19ada08d9af27e4c7a7cfb35ccb1 9799bbf3e4c800d3317400b19d6bcb935682d80a misa arikawa <misaarikawa@MacBook-Pro.local> 1456828324 +0900	commit: ログアウトボタンつけた
+9799bbf3e4c800d3317400b19d6bcb935682d80a f57c55c86f52dce18c2b104795668df55892f13d misa arikawa <misaarikawa@MacBook-Pro.local> 1456835767 +0900	commit: diesのviews usersテーブル作り直した
+f57c55c86f52dce18c2b104795668df55892f13d 5a14c313fc768468d3bd293d3244a58156a7e8be misa arikawa <misaarikawa@MacBook-Pro.local> 1456873486 +0900	commit: devise再作り直し、avatarカラム追加
+5a14c313fc768468d3bd293d3244a58156a7e8be 0677c78bec693e0993bdc2bed793285f40e181c2 misa arikawa <misaarikawa@MacBook-Pro.local> 1457076483 +0900	commit: ユーサーページ編集、dbの名前カラム作り直し
+0677c78bec693e0993bdc2bed793285f40e181c2 86c4e5b5b09dbe015b144b5f134a9c00610e97a2 misa arikawa <misaarikawa@MacBook-Pro.local> 1457078747 +0900	commit: ユーザー編集ページ作成
+86c4e5b5b09dbe015b144b5f134a9c00610e97a2 7cd6aef1b1be0b0190a797665154674e31987d44 misa arikawa <misaarikawa@MacBook-Pro.local> 1457082600 +0900	commit: ユーザーページ編集と更新を設定
+7cd6aef1b1be0b0190a797665154674e31987d44 a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 misa arikawa <misaarikawa@MacBook-Pro.local> 1457082645 +0900	commit: ユーザーアップデートビュー

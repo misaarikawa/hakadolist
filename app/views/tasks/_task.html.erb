@@ -1,0 +1,33 @@
+<div class="question_content top_content">
+  <header class="question_header">
+    <div class="question_image icon_image" style="background-image: url(<%= task.user.avatar.url(:medium) %>);"></div>
+    <div class="question_user_info user_info">
+      <span><%= link_to task.user.name, user_path(task.user) %>さんが仕事を登録しました</span>
+      <time><%= time_ago_in_words task.created_at %></time>
+    </div>
+  </header>
+  <div class="question_body">
+    <div class="question_box">
+      <h3><%= task.title %></h3>
+      <h3><%= task.detail %></h3>
+
+      <% if params[:controller] == "users" %>
+        <small class='edit'>
+          <%= link_to '編集', edit_task_path(task) %>
+        </small>
+      <% end %>
+    </div>
+
+    <div class="questioned">
+      <%= link_to "進捗登録件数#{task.goings.count}件", task_path(task) %>
+      <%= "既読#{task.task_checks.count}人" %>
+      <% task.task_checks.each do |i| %>
+      <div class="question_image icon_mini_image" style="background-image: url(<%= i.user.avatar.url(:medium) %>);"></div>
+      <% end %>
+      <%= form_tag(new_going_path, method: :get, class: "question_submit") do %>
+      <%= hidden_field_tag(:task_id, task.id) %>
+      <%= submit_tag("進捗を登録する") %>
+    <% end %>
+    </div>
+  </div>
+</div>

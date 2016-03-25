@@ -1,0 +1,13 @@
+<div class="question_content top_content">
+  <div class="question_body">
+    <div class="question_box">
+      <span class="q">進捗</span>
+      <span class="question_text"><%= going.text %></span>
+      <% if @user.id == current_user.id %>
+        <small class='edit'>
+          <%= link_to '編集', edit_going_path(going) %>
+        </small>
+      <% end %>
+    </div>
+  </div>
+</div>

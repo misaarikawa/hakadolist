@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 76e724f0b956332a9a215c47cb150e82edff1cfc misa arikawa <misaarikawa@MacBook-Pro.local> 1457432253 +0900	branch: Created from comment
+76e724f0b956332a9a215c47cb150e82edff1cfc c32a1c31462d136c776e0d92b96d110c8f8264f3 misa arikawa <misaarikawa@MacBook-Pro.local> 1457432286 +0900	commit: feed_contentモデル作成とポリモーフィック定義
+c32a1c31462d136c776e0d92b96d110c8f8264f3 9a3f7cc18089ce705da099454ebfcadbb4d0003c misa arikawa <misaarikawa@MacBook-Pro.local> 1457435954 +0900	commit: マイページとプロフィール編集のれダイレクトを設定
+9a3f7cc18089ce705da099454ebfcadbb4d0003c b753cf5f31dbf7fc7138a0947569973a7a8d540d misa arikawa <misaarikawa@MacBook-Pro.local> 1457436033 +0900	commit: feed用のコントローラー設定モデルの関連付け
+b753cf5f31dbf7fc7138a0947569973a7a8d540d f649723681ce5b0b03a366a0faf9dbea71e06789 misa arikawa <misaarikawa@MacBook-Pro.local> 1457444154 +0900	commit: feedのポリモーフィックを利用したタイムライン作成途中
+f649723681ce5b0b03a366a0faf9dbea71e06789 ff294e53b0277c9b44a6e1c61ee942b3672ff800 misa arikawa <misaarikawa@MacBook-Pro.local> 1457444201 +0900	commit: taskのview編集中

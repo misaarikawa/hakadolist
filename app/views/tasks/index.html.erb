@@ -1,0 +1,15 @@
+    <div class="posting_form top_content">
+      <header class="posting_header">
+        <div class="posting_image icon_image" style="background-image: url(<%= current_user.avatar.url(:medium) %>);"></div>
+        <div class="posting_user_info user_info">
+          <%= current_user.name %>
+        </div>
+      </header>
+      <%= form_for(@task) do |f| %>
+        <%= f.text_field :title, placeholder: "タイトル" %>
+        <%= f.text_field :detail, placeholder: "仕事内容" %>
+        <%= f.submit "新しい仕事を登録する" %>
+      <% end %>
+    </div>
+
+    <%= render partial: "tasks/task", collection: @tasks %>

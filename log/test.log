@@ -1,0 +1,129 @@
+  [1m[36m (31.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (26.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20160301132830)
+  [1m[35m (26.0ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (11.5ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (8.5ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (7.8ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_confirmation_token`  ON `users` (`confirmation_token`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (12.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160301132830')[0m
+  [1m[35m (6.0ms)[0m  COMMIT
+Migrating to AddColumnToUser (20160301133053)
+  [1m[36m (35.5ms)[0m  [1mALTER TABLE `users` ADD `name` varchar(255)[0m
+  [1m[35m (14.2ms)[0m  ALTER TABLE `users` ADD `name_kana` varchar(255)
+  [1m[36m (12.9ms)[0m  [1mALTER TABLE `users` ADD `unit` varchar(255)[0m
+  [1m[35m (11.8ms)[0m  ALTER TABLE `users` ADD `job` varchar(255)
+  [1m[36m (13.5ms)[0m  [1mALTER TABLE `users` ADD `charge` text[0m
+  [1m[35m (14.5ms)[0m  ALTER TABLE `users` ADD `image` text
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160301133053')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttachmentAvatarToUsers (20160301135914)
+  [1m[35m (56.6ms)[0m  ALTER TABLE `users` ADD `avatar_file_name` varchar(255)
+  [1m[36m (15.4ms)[0m  [1mALTER TABLE `users` ADD `avatar_content_type` varchar(255)[0m
+  [1m[35m (11.7ms)[0m  ALTER TABLE `users` ADD `avatar_file_size` int(11)
+  [1m[36m (11.7ms)[0m  [1mALTER TABLE `users` ADD `avatar_updated_at` datetime[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160301135914')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to RemoveNameFromusers (20160304070900)
+  [1m[36m (34.9ms)[0m  [1mALTER TABLE `users` DROP `name`[0m
+  [1m[35m (10.8ms)[0m  ALTER TABLE `users` DROP `name_kana`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160304070900')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTasks (20160304121229)
+  [1m[35m (29.2ms)[0m  CREATE TABLE `tasks` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `title` varchar(255), `image` text, `detail` text, `is_done` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160304121229')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateGoings (20160308051237)
+  [1m[35m (30.1ms)[0m  CREATE TABLE `goings` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `task_id` int(11), `image` text, `text` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160308051237')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddNameToUsers (20160308051940)
+  [1m[35m (33.2ms)[0m  ALTER TABLE `users` ADD `family_name` varchar(255)
+  [1m[36m (14.4ms)[0m  [1mALTER TABLE `users` ADD `first_name` varchar(255)[0m
+  [1m[35m (11.7ms)[0m  ALTER TABLE `users` ADD `family_name_kana` varchar(255)
+  [1m[36m (11.7ms)[0m  [1mALTER TABLE `users` ADD `first_name_kana` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160308051940')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Migrating to CreateTaskChecks (20160308052406)
+  [1m[36m (31.6ms)[0m  [1mCREATE TABLE `task_checks` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `task_id` int(11), `is_read` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160308052406')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to CreateGoingChecks (20160308052415)
+  [1m[36m (27.5ms)[0m  [1mCREATE TABLE `going_checks` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `task_id` int(11), `going_id` int(11), `is_read` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160308052415')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Migrating to CreateComments (20160310192400)
+  [1m[36m (26.6ms)[0m  [1mCREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `task_id` int(11), `going_id` int(11), `image` text, `text` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160310192400')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'Hakadolist_test'
+  AND fk.table_name = 'comments'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `comments`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'Hakadolist_test'
+  AND fk.table_name = 'going_checks'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `going_checks`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'Hakadolist_test'
+  AND fk.table_name = 'goings'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `goings`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'Hakadolist_test'
+  AND fk.table_name = 'task_checks'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `task_checks`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'Hakadolist_test'
+  AND fk.table_name = 'tasks'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `tasks`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'Hakadolist_test'
+  AND fk.table_name = 'users'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `users`[0m

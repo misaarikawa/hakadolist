@@ -1,0 +1,10 @@
+0000000000000000000000000000000000000000 a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 misa arikawa <misaarikawa@MacBook-Pro.local> 1457082674 +0900	branch: Created from devise
+a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 misa arikawa <misaarikawa@MacBook-Pro.local> 1457090598 +0900	Branch: renamed refs/heads/index to refs/heads/task_index
+a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 misa arikawa <misaarikawa@MacBook-Pro.local> 1457090612 +0900	Branch: renamed refs/heads/task_index to refs/heads/task
+a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 4e007d93478fe634aaecb6c4754daffcbfa674fd misa arikawa <misaarikawa@MacBook-Pro.local> 1457090669 +0900	commit: taskモデルとコントローラー、ビューの作成
+4e007d93478fe634aaecb6c4754daffcbfa674fd 330bc864067d0cc95405f5d2d3e14cf226e1db2e misa arikawa <misaarikawa@MacBook-Pro.local> 1457100141 +0900	commit: taskのモデル作成
+330bc864067d0cc95405f5d2d3e14cf226e1db2e 8b6e7b60119c3a7321143f42a7d7d67aa476dabe misa arikawa <misaarikawa@MacBook-Pro.local> 1457100323 +0900	commit: 新規登録ページとユーザーページの編集
+8b6e7b60119c3a7321143f42a7d7d67aa476dabe 6b4636626b9b2b482d37b78e8892cbd5de5f128f misa arikawa <misaarikawa@MacBook-Pro.local> 1457415060 +0900	commit: taskとgoingのモデル作成、テーブル追加
+6b4636626b9b2b482d37b78e8892cbd5de5f128f b2ed6ac4ecb8b5715d116aad624aaffbf2fa1283 misa arikawa <misaarikawa@MacBook-Pro.local> 1457430959 +0900	commit: task投稿、一覧view編集
+b2ed6ac4ecb8b5715d116aad624aaffbf2fa1283 ecfd22af894c35a1d95f537bb8dc7fe551a141fb misa arikawa <misaarikawa@MacBook-Pro.local> 1457452020 +0900	commit: polymorphickを使わず一旦一覧表示成功
+ecfd22af894c35a1d95f537bb8dc7fe551a141fb 727b1750c15ac737e2fe3729a923cf543fa723b5 misa arikawa <misaarikawa@MacBook-Pro.local> 1457456071 +0900	commit: taskタイムライン表示と進捗登録ボタンからの投稿ページへのリンク

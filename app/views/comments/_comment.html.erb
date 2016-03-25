@@ -1,0 +1,21 @@
+<div class="question_content top_content">
+  <header class="question_header">
+  <div class="question_image icon_image" style="background-image: url(<%= comment.user.avatar.url(:medium) %>);"></div>
+    <div class="question_user_info user_info">
+      <span><%= link_to comment.user.name, user_path(comment.user) %>さんが
+        <span class="q"><%= link_to "進捗にコメント", going_path(comment.going) %></span>しました
+      </span>
+      <time><%= time_ago_in_words comment.created_at %></time>
+    </div>
+  </header>
+  <div class="question_body">
+    <div class="question_box">
+      <h3><%= comment.text %></h3>
+      <% if params[:controller] == "users" %>
+        <small class='edit'>
+          <%= link_to '編集', edit_comment_path(comment) %>
+        </small>
+      <% end %>
+    </div>
+  </div>
+</div>

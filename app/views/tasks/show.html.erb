@@ -1,0 +1,18 @@
+<div class="row form">
+  <div class="col-lg-12">
+    <%= form_for(@going) do |f| %>
+      <h4>タイトル</h4>
+      <h3><%= @task.title %></h3>
+      <h4>仕事内容</h4>
+      <h3><%= @task.detail %></h3>
+      <div class="form-group">
+        <%= f.text_area :text, placeholder: "進捗を入力してください", cols:"30", rows:"10", autofocus:"true", class:"form-control" %>
+      </div>
+      <%= f.hidden_field :task_id %>
+      <%= f.submit "進捗を登録する", class:"btn btn-primary withripple"%>
+    <% end %>
+
+    <h4>進捗一覧</h4>
+    <%= render partial: "tasks/going", collection: @goings %>
+  </div>
+</div>

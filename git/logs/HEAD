@@ -1,0 +1,47 @@
+0000000000000000000000000000000000000000 131a036fd91ee11cc22dd5b6447d6a51e79ffb3a misa arikawa <misaarikawa@MacBook-Pro.local> 1456814668 +0900	commit (initial): assetsの設定を”Profy”からコピー
+131a036fd91ee11cc22dd5b6447d6a51e79ffb3a 65377a909a3e1d609de73699cf427e87d0c6b893 misa arikawa <misaarikawa@MacBook-Pro.local> 1456815123 +0900	commit: 認証メールのURLを設定
+65377a909a3e1d609de73699cf427e87d0c6b893 afaeae646235c72b2681e233d9267a41136500d4 misa arikawa <misaarikawa@MacBook-Pro.local> 1456817065 +0900	commit: ブートストラップを使ったフラッシュメッセージの表示
+afaeae646235c72b2681e233d9267a41136500d4 afaeae646235c72b2681e233d9267a41136500d4 misa arikawa <misaarikawa@MacBook-Pro.local> 1456817077 +0900	checkout: moving from master to devise
+afaeae646235c72b2681e233d9267a41136500d4 afaeae646235c72b2681e233d9267a41136500d4 misa arikawa <misaarikawa@MacBook-Pro.local> 1456819398 +0900	checkout: moving from devise to master
+afaeae646235c72b2681e233d9267a41136500d4 afaeae646235c72b2681e233d9267a41136500d4 misa arikawa <misaarikawa@MacBook-Pro.local> 1456820430 +0900	checkout: moving from master to devise
+afaeae646235c72b2681e233d9267a41136500d4 afaeae646235c72b2681e233d9267a41136500d4 misa arikawa <misaarikawa@MacBook-Pro.local> 1456820462 +0900	checkout: moving from devise to master
+afaeae646235c72b2681e233d9267a41136500d4 4da891d83311540cc3112db9fe8173690757d2cf misa arikawa <misaarikawa@MacBook-Pro.local> 1456820482 +0900	commit: 共通設定を書き込みました
+4da891d83311540cc3112db9fe8173690757d2cf afaeae646235c72b2681e233d9267a41136500d4 misa arikawa <misaarikawa@MacBook-Pro.local> 1456820484 +0900	checkout: moving from master to devise
+afaeae646235c72b2681e233d9267a41136500d4 ee3f939ea47c19ada08d9af27e4c7a7cfb35ccb1 misa arikawa <misaarikawa@MacBook-Pro.local> 1456823690 +0900	commit: ユーザーモデルを作成
+ee3f939ea47c19ada08d9af27e4c7a7cfb35ccb1 4da891d83311540cc3112db9fe8173690757d2cf misa arikawa <misaarikawa@MacBook-Pro.local> 1456823693 +0900	checkout: moving from devise to master
+4da891d83311540cc3112db9fe8173690757d2cf 2fcc2264fb9f6fbd2ce85e648ead201561c18430 misa arikawa <misaarikawa@MacBook-Pro.local> 1456824461 +0900	commit: indexを編集
+2fcc2264fb9f6fbd2ce85e648ead201561c18430 1446d5c502e28d1ada3dba349108c4c34e3ba5b9 misa arikawa <misaarikawa@MacBook-Pro.local> 1456825046 +0900	commit: 日本語化の設定
+1446d5c502e28d1ada3dba349108c4c34e3ba5b9 f62c8ef7e06ad436827c1d8cbafafde6a3266f01 misa arikawa <misaarikawa@MacBook-Pro.local> 1456826124 +0900	commit: トップページのview編集
+f62c8ef7e06ad436827c1d8cbafafde6a3266f01 ee3f939ea47c19ada08d9af27e4c7a7cfb35ccb1 misa arikawa <misaarikawa@MacBook-Pro.local> 1456826132 +0900	checkout: moving from master to devise
+ee3f939ea47c19ada08d9af27e4c7a7cfb35ccb1 9799bbf3e4c800d3317400b19d6bcb935682d80a misa arikawa <misaarikawa@MacBook-Pro.local> 1456828324 +0900	commit: ログアウトボタンつけた
+9799bbf3e4c800d3317400b19d6bcb935682d80a f57c55c86f52dce18c2b104795668df55892f13d misa arikawa <misaarikawa@MacBook-Pro.local> 1456835767 +0900	commit: diesのviews usersテーブル作り直した
+f57c55c86f52dce18c2b104795668df55892f13d 5a14c313fc768468d3bd293d3244a58156a7e8be misa arikawa <misaarikawa@MacBook-Pro.local> 1456873486 +0900	commit: devise再作り直し、avatarカラム追加
+5a14c313fc768468d3bd293d3244a58156a7e8be 0677c78bec693e0993bdc2bed793285f40e181c2 misa arikawa <misaarikawa@MacBook-Pro.local> 1457076483 +0900	commit: ユーサーページ編集、dbの名前カラム作り直し
+0677c78bec693e0993bdc2bed793285f40e181c2 86c4e5b5b09dbe015b144b5f134a9c00610e97a2 misa arikawa <misaarikawa@MacBook-Pro.local> 1457078747 +0900	commit: ユーザー編集ページ作成
+86c4e5b5b09dbe015b144b5f134a9c00610e97a2 7cd6aef1b1be0b0190a797665154674e31987d44 misa arikawa <misaarikawa@MacBook-Pro.local> 1457082600 +0900	commit: ユーザーページ編集と更新を設定
+7cd6aef1b1be0b0190a797665154674e31987d44 a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 misa arikawa <misaarikawa@MacBook-Pro.local> 1457082645 +0900	commit: ユーザーアップデートビュー
+a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 misa arikawa <misaarikawa@MacBook-Pro.local> 1457082675 +0900	checkout: moving from devise to index
+a1a07b0116c61ab7ba5a1640d317b5456c9c27c4 4e007d93478fe634aaecb6c4754daffcbfa674fd misa arikawa <misaarikawa@MacBook-Pro.local> 1457090669 +0900	commit: taskモデルとコントローラー、ビューの作成
+4e007d93478fe634aaecb6c4754daffcbfa674fd 330bc864067d0cc95405f5d2d3e14cf226e1db2e misa arikawa <misaarikawa@MacBook-Pro.local> 1457100141 +0900	commit: taskのモデル作成
+330bc864067d0cc95405f5d2d3e14cf226e1db2e 8b6e7b60119c3a7321143f42a7d7d67aa476dabe misa arikawa <misaarikawa@MacBook-Pro.local> 1457100323 +0900	commit: 新規登録ページとユーザーページの編集
+8b6e7b60119c3a7321143f42a7d7d67aa476dabe 6b4636626b9b2b482d37b78e8892cbd5de5f128f misa arikawa <misaarikawa@MacBook-Pro.local> 1457415060 +0900	commit: taskとgoingのモデル作成、テーブル追加
+6b4636626b9b2b482d37b78e8892cbd5de5f128f 6b4636626b9b2b482d37b78e8892cbd5de5f128f misa arikawa <misaarikawa@MacBook-Pro.local> 1457430876 +0900	checkout: moving from task to going
+6b4636626b9b2b482d37b78e8892cbd5de5f128f 6b4636626b9b2b482d37b78e8892cbd5de5f128f misa arikawa <misaarikawa@MacBook-Pro.local> 1457430888 +0900	checkout: moving from going to comment
+6b4636626b9b2b482d37b78e8892cbd5de5f128f 6b4636626b9b2b482d37b78e8892cbd5de5f128f misa arikawa <misaarikawa@MacBook-Pro.local> 1457430899 +0900	checkout: moving from comment to task
+6b4636626b9b2b482d37b78e8892cbd5de5f128f b2ed6ac4ecb8b5715d116aad624aaffbf2fa1283 misa arikawa <misaarikawa@MacBook-Pro.local> 1457430959 +0900	commit: task投稿、一覧view編集
+b2ed6ac4ecb8b5715d116aad624aaffbf2fa1283 6b4636626b9b2b482d37b78e8892cbd5de5f128f misa arikawa <misaarikawa@MacBook-Pro.local> 1457430963 +0900	checkout: moving from task to going
+6b4636626b9b2b482d37b78e8892cbd5de5f128f 47aa15b6e7efbe079678e7638c0d1c949dac24e5 misa arikawa <misaarikawa@MacBook-Pro.local> 1457431007 +0900	commit: goingのview編集
+47aa15b6e7efbe079678e7638c0d1c949dac24e5 6b4636626b9b2b482d37b78e8892cbd5de5f128f misa arikawa <misaarikawa@MacBook-Pro.local> 1457431011 +0900	checkout: moving from going to comment
+6b4636626b9b2b482d37b78e8892cbd5de5f128f 2d31cc9ed9de05eb308c2a775a1c6fbedeacd1ed misa arikawa <misaarikawa@MacBook-Pro.local> 1457431045 +0900	commit: commentコントローラー作成
+2d31cc9ed9de05eb308c2a775a1c6fbedeacd1ed 76e724f0b956332a9a215c47cb150e82edff1cfc misa arikawa <misaarikawa@MacBook-Pro.local> 1457432242 +0900	commit: commentコントローラーとモデル作成
+76e724f0b956332a9a215c47cb150e82edff1cfc 76e724f0b956332a9a215c47cb150e82edff1cfc misa arikawa <misaarikawa@MacBook-Pro.local> 1457432253 +0900	checkout: moving from comment to feed_content
+76e724f0b956332a9a215c47cb150e82edff1cfc c32a1c31462d136c776e0d92b96d110c8f8264f3 misa arikawa <misaarikawa@MacBook-Pro.local> 1457432286 +0900	commit: feed_contentモデル作成とポリモーフィック定義
+c32a1c31462d136c776e0d92b96d110c8f8264f3 9a3f7cc18089ce705da099454ebfcadbb4d0003c misa arikawa <misaarikawa@MacBook-Pro.local> 1457435954 +0900	commit: マイページとプロフィール編集のれダイレクトを設定
+9a3f7cc18089ce705da099454ebfcadbb4d0003c b753cf5f31dbf7fc7138a0947569973a7a8d540d misa arikawa <misaarikawa@MacBook-Pro.local> 1457436033 +0900	commit: feed用のコントローラー設定モデルの関連付け
+b753cf5f31dbf7fc7138a0947569973a7a8d540d f649723681ce5b0b03a366a0faf9dbea71e06789 misa arikawa <misaarikawa@MacBook-Pro.local> 1457444154 +0900	commit: feedのポリモーフィックを利用したタイムライン作成途中
+f649723681ce5b0b03a366a0faf9dbea71e06789 ff294e53b0277c9b44a6e1c61ee942b3672ff800 misa arikawa <misaarikawa@MacBook-Pro.local> 1457444201 +0900	commit: taskのview編集中
+ff294e53b0277c9b44a6e1c61ee942b3672ff800 b2ed6ac4ecb8b5715d116aad624aaffbf2fa1283 misa arikawa <misaarikawa@MacBook-Pro.local> 1457444203 +0900	checkout: moving from feed_content to task
+b2ed6ac4ecb8b5715d116aad624aaffbf2fa1283 ecfd22af894c35a1d95f537bb8dc7fe551a141fb misa arikawa <misaarikawa@MacBook-Pro.local> 1457452020 +0900	commit: polymorphickを使わず一旦一覧表示成功
+ecfd22af894c35a1d95f537bb8dc7fe551a141fb 727b1750c15ac737e2fe3729a923cf543fa723b5 misa arikawa <misaarikawa@MacBook-Pro.local> 1457456071 +0900	commit: taskタイムライン表示と進捗登録ボタンからの投稿ページへのリンク
+727b1750c15ac737e2fe3729a923cf543fa723b5 47aa15b6e7efbe079678e7638c0d1c949dac24e5 misa arikawa <misaarikawa@MacBook-Pro.local> 1457456076 +0900	checkout: moving from task to going
+47aa15b6e7efbe079678e7638c0d1c949dac24e5 61046a74cc45e11bb44d58adfe96e879defe5fe3 misa arikawa <misaarikawa@MacBook-Pro.local> 1458652745 +0900	commit: init commit
