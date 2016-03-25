@@ -105,6 +105,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
+    mysql (2.9.1)
     mysql2 (0.3.18)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -115,7 +116,6 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
-    pg (0.18.4)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -217,9 +217,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
+  mysql
   mysql2 (= 0.3.18)
   paperclip
-  pg
   pry-rails
   rails (= 4.2.5.1)
   rails_12factor
